@@ -36,4 +36,9 @@ public class Author {
     public String getmLastName() {
         return mLastName;
     }
+
+    @Override
+    public String toString() {
+        return mFirstName + " " + mLastName;
+    }
 }

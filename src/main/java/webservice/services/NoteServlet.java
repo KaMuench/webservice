@@ -78,7 +78,7 @@ public class NoteServlet extends HttpServlet {
         long ret = 0;
         int index = req.getRequestURI().lastIndexOf("/");
         try {
-            ret = Long.getLong(req.getRequestURI().substring(index+1));
+            ret = Long.parseLong(req.getRequestURI().substring(index+1));
         } catch (NumberFormatException e) {
         }
         return ret;

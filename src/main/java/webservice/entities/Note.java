@@ -29,6 +29,6 @@ public class Note {
 
     @Override
     public String toString() {
-        return String.format("ID:%10d%nTitle:%10s%nContent:%10s%nAuthor%s%n",mId,mTitle,mContent,mAuthor);
+        return String.format("%-10s%d%n%-10s%s%n%-10s%s%n%-10s%s%n","ID:",mId,"Title:",mTitle,"Content:", mContent, "Author:",mAuthor);
     }
 }
